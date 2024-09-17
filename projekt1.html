@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        .back-arrow {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-size: 18px;
+            text-decoration: none;
+            color: #4CAF50;
+        }
+
+        .back-arrow:hover {
+            text-decoration: underline;
+        }
+
+        .back-arrow::before {
+            content: "←";
+            margin-right: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    Projekt 1
+</header>
+
+<div class="container">
+    <a href="index.html" class="back-arrow">Powrót na stronę główną</a>
+
+    <h2>Opis i szczegóły Projektu 1</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Etap</th>
+                <th>Opis</th>
+                <th>Data zakończenia</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Wstępny projekt i planowanie</td>
+                <td>15 września 2024</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Implementacja i rozwój</td>
+                <td>30 września 2024</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Testowanie i wdrożenie</td>
+                <td>15 października 2024</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
