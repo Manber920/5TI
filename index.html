@@ -1,149 +1,119 @@
-
-<!DOCTYPE="html">
-<html lang="pl"
+<!DOCTYPE html>
+<html lang="pl">
 <head>
-  <meta charset="UTF-8">
-  <title>5TI - MMI</title>
-  <style>
-    header {
-            background-color:#00ff0d;
-            color: blue;
-            text-align: center;
-            padding: 20px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moje Projekty</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-  </style>
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        td a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        td a:hover {
+            text-decoration: underline;
+        }
+
+        td img {
+            width: 50px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Miłosz Młynarczuk - 5TI - Mily Mushrooms Industry</h1>
-  </header>
-  
-    <table border="1">
-    <tr>
-        <td rowspan="2"> W dół połączone komórki</td>
-        <td> 2</td>
-        <td> 3</td>
-    </tr>
-    <tr>
-        <td> 4</td>
-        <td> 5</td>
-    </tr>
-    <tr>
-        <td> 6</td>
-        <td> 7</td>
-        <td> 8</td>
-    </tr>
-  </table>
-  
-  <table border="1">
-    <tr>
-        <td> 1</td>
-        <td> 2</td>
-        <td> 3</td>
-        <td> 4</td>
-    </tr>
-    <tr>
-        <td> 5</td>
-        <td colspan="2">Połączone Komórki</td>
-        <td> 8</td>
-    </tr>
-    <tr>
-        <td> 9</td>
-        <td> 10</td>
-        <td> 11</td>
-        <td> 12</td>
-    </tr>
-</table>
 
-  <table border="1">
-    <tr>
-        <td colspan="2">Połączone Komórki</td>
-        <td> 3</td>
-        <td> 4</td>
-    </tr>
-    <tr>
-        <td rowspan="2"> 1</td>
-        <td> 6</td>
-        <td> 7</td>
-        <td> 8</td>
-    </tr>
-    <tr>
-        <td> 9</td>
-        <td> 10</td>
-        <td> 11</td>
-    </tr>
-    <tr>
-        <td> 12</td>
-        <td> 13</td>
-        <td> 14</td>
-        <td> 15</td>
-    </tr>
-</table>
+<header>
+    Moje Projekty
+</header>
 
-  <table border="1">
-    <tr>
-        <th>Produkt</th>
-        <th>Cena</th>
-        <th>Ilość</th>
-    </tr>
-    <tr>
-        <td>Jabłka</td>
-        <td>2 zł</td>
-        <td>4 kg</td>
-    </tr>
-    <tr>
-        <td rowspan="2">Gruszki </td>
-        <td>3 zł</td>
-        <td>6 kg</td>
-    </tr>
-    <tr>
-        <td>4 zł</td>
-        <td>8 kg</td>
-    </tr>
-    <tr>
-        <td>Pomarańcze</td>
-        <td colspan="2">Ile trzeba </td>
-    </tr>
-</table>
-
-  <table border="1">
-    <tr>
-        <td colspan="3">Połączone Komórki </td>
-        <td> 4</td>
-        <td> 5</td>
-    </tr>
-    <tr>
-        <td> 6</td>
-        <td> 7</td>
-        <td> 8</td>
-        <td> 9</td>
-        <td> 10</td>
-    </tr>
-    <tr>
-        <td rowspan="2"> 1 </td>
-        <td rowspan="2"> 2 </td>
-        <td> 11</td>
-        <td> 12</td>
-        <td> 13</td>
-    </tr>
-    <tr>
-        <td> 14</td>
-        <td> 15</td>
-        <td> 16</td>
-    </tr>
-    <tr>
-        <td> 17</td>
-        <td colspan="3">Połączone Komórki</td>
-        <td> 21</td>
-    </tr>
-    <tr>
-        <td> 22</td>
-        <td> 23</td>
-        <td> 24</td>
-        <td> 25</td>
-        <td> 26</td>
-    </tr>
-</table>
+<div class="container">
+    <h2>Lista Projektów</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Data</th>
+                <th>Projekt</th>
+                <th>Miniatura</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>17 września 2024</td>
+                <td><a href="projekt1.html" target="_blank">#1 HTML - Podstawy (prezentacja)</a></td>
+                <td><img src="https://via.placeholder.com/50" alt="Miniatura Projektu 1"></td>
+            </tr>
+            <tr>
+                <td>24 września 2024</td>
+                <td><a href="projekt1.html" target="_blank">#2 HTML - ciąg dalszy (prezentacja)</a></td>
+                <td><img src="https://via.placeholder.com/50" alt="Miniatura Projektu 2"></td>
+            </tr>
+            <tr>
+                <td>24 września 2024</td>
+                <td><a href="https://docs.google.com/presentation/d/16bblVodQhkZ9u9KDvuyrbAoxVpvwI1ORmRn0FvvMJcw/edit#slide=id.p" target="_blank">#3 Marginesy - prezentacja</a></td>
+                <td><img src="https://via.placeholder.com/50" alt="Miniatura Projektu 2"></td>
+            </tr>
+            <tr>
+                <td>24 września 2024</td>
+                <td><a href="projekt1.html" target="_blank">#4 Tabele colspan & rowspan</a></td>
+                <td><img src="https://via.placeholder.com/50" alt="Miniatura Projektu 2"></td>
+            </tr>
+            <tr>
+                <td>24 września 2024</td>
+                <td><a href="projekt1.html" target="_blank">#5 Tabele colspan & rowspan</a></td>
+                <td><img src="https://via.placeholder.com/50" alt="Miniatura Projektu 2"></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
 </body>
 </html>
